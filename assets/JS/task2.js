@@ -34,3 +34,51 @@ const func2 = function() {
 
 func2 ();
 
+//if / else Version
+//calc1
+
+const calc1 = function (num1, param, num2) {
+    // '+'
+    if (param === '+') {
+        return num1 + num2;
+    // '-'    
+    } else if (param === '-') {
+        return num1 - num2;
+        // '*'  
+    } else if (param === '*') { 
+        return num1 * num2;
+        // '/'  
+    } else if (param === '/')
+    if (num2 === 0) {
+        return 'Error';
+    }else {
+        return num1 / num2;
+    }else {
+        return 'ti tupoi';
+    }
+}
+// (number1, 'x', number2);
+
+
+//switch / case Version
+//calc2
+
+const calc2 = function (num1, param, num2) {
+    switch(param){
+        case '+':
+            return num1 + num2;
+        case '-':
+            return num1 - num2;
+        case '*':
+            return num1 * num2;
+            case '/':
+                if(num2 === 0) {
+                    return 'error'
+                }
+            return num1 / num2;
+        default:
+            return 'error';                
+    }
+}
+
+// (number1, 'x', number2);
